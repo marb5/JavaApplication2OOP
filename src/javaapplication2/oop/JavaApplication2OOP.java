@@ -17,11 +17,15 @@ public class JavaApplication2OOP {
         Point p1 = new Point();
         Point p2 = new Point(10,20);
         
-        System.out.println("p1.x " + p1.x);
-        System.out.println("p1.y " + p1.y);
+        System.out.println("p1:");
+        p1.showCoordinates();
+        System.out.println("p2:");
+        p2.showCoordinates();
         
-        System.out.println("p2.x " + p2.x);
-        System.out.println("p2.y " + p2.y);
+        NewClass test = new NewClass();
+        
+        System.out.println(test.add(2, 3));
+        System.out.println(test.add(2.1, 3.4));
     }
     
 }
