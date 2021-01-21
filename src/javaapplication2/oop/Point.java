@@ -19,6 +19,9 @@ public class Point {
         this.x = _x;
         this.y = _y;
     }
+    void showCoordinates() {
+        System.out.println("x: " + this.x + " y: " + this.y);
+    }
     
     int x;
     int y;
