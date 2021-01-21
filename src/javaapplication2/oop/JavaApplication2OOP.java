@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package javaapplication2.oop;
 
 /**
@@ -11,11 +6,34 @@ package javaapplication2.oop;
  */
 public class JavaApplication2OOP {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Monitor firstMonitor = new Monitor();
+        firstMonitor.width = 1000;
+        firstMonitor.height = 800;
+        
+        System.out.println(firstMonitor.width);
+        System.out.println(firstMonitor.height);
+        
+        Point p1 = new Point();
+        Point p2 = new Point(10,20);
+        
+        System.out.println("p1.x " + p1.x);
+        System.out.println("p1.y " + p1.y);
+        
+        System.out.println("p2.x " + p2.x);
+        System.out.println("p2.y " + p2.y);
     }
     
+}
+
+class Monitor {
+    int width;
+    int height;
+    
+    void turnOn() {
+        
+    }
+    void turnOff() {
+        
+    }
 }
