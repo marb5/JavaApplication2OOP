@@ -1,4 +1,4 @@
-package javaapplication2.oop;
+package javaapplication2oop;
 
 /**
  *
@@ -52,24 +52,10 @@ class Monitor {
     }
 }
 
-class MyMath
-{
+class MyMath {
     static final double PI = 3.14; //unchangeable final value
     static double add(double a, double b)
     {
         return a + b;
     }
-}
-
-class Client
-{
-    Client(String name)
-    {
-        this.name = name;       
-        id = nextId;
-        nextId++;
-    }
-    String name;
-    int id = 0;
-    static int nextId = 1;
 }
