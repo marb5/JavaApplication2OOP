@@ -4,7 +4,7 @@ package inheritance.animals;
  *
  * @author Marcin
  */
-public class Animal {
+public abstract class Animal {
     protected double weight;
     protected String name;
     
@@ -14,10 +14,10 @@ public class Animal {
     public String getName() {
         return this.name;
     }
-    public void whatAnimalIAm() {
+    abstract public void whatAnimalIAm();/* {
         System.out.println("Jestem zwierzęciem, ważę " + this.weight + 
                 " i mam na imię " + this.name);
-    }
+    }*/
     public Animal() {
         this.weight = 0.0;
         this.name = "";
