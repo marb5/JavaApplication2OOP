@@ -9,6 +9,7 @@ public class Dog extends Animal {
     public String getRace() {
         return this.race;
     }
+    @Override
     public void whatAnimalIAm() {
         System.out.println("Jestem psem, ważę " + this.weight + 
                 " i mam na imię " + this.name + " moja rasa to " + this.race);
