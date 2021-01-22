@@ -21,6 +21,14 @@ public class Reference {
         
         changeValue(x);
         System.out.println(x.n);
+        
+        String name1 = new String("Marcin");
+        String name2 = new String("Marcin");
+        
+        if (name1.equals(name2))
+            System.out.println("equals");
+        else
+            System.out.println("not equals");
     }
     
     static int changeValue(int a) {
