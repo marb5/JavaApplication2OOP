@@ -31,8 +31,15 @@ public class Inheritance {
         animals[1] = new Cat(4.35, "Katy", "Maine Coon");
         
         for (Animal ani: animals) {
-            if (ani instanceof Animal)
+            if (ani instanceof Animal) {
                 ani.whatAnimalIAm();
+                if (ani instanceof Dog) {
+                    ((Dog) ani).woo();
+                }
+                else if (ani instanceof Cat) {
+                    ((Cat) ani).meow();
+                }
+            }
             else
                 break;
         }

@@ -30,4 +30,7 @@ public class Cat extends Animal {
         this.race = race;
         System.out.println("Konstruktor z trzema parametrami z klasy Cat");
     }
+    public void meow() {
+        System.out.println("meow!");
+    }
 }
