@@ -11,6 +11,7 @@ public class Interfaces {
         
         newInterface a = new Employee(6456.77);
         System.out.println(((Employee)a).getSalary());
+        a.defaultMessage();
         
         int[] array = {34, -23, 4};
         Arrays.sort(array);
@@ -37,6 +38,9 @@ public class Interfaces {
 interface newInterface {
     double PI = 3.14; // public static final
     void message(); //public abstract
+    default void defaultMessage() {
+        System.out.println("Domyślna metoda interfejsu");
+    }
 }
 
 //we can implement more than 1 interface
