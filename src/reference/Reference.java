@@ -15,10 +15,23 @@ public class Reference {
         Obj y = x; //reference to same obj x
         y.n = 5;
         System.out.println(x.n);
+        
+        a = changeValue(a);
+        System.out.println(a);
+        
+        changeValue(x);
+        System.out.println(x.n);
+    }
+    
+    static int changeValue(int a) {
+        a++;
+        return a;
+    }
+    static void changeValue(Obj o) {
+        o.n++;
     }
 }
 
-class Obj
-{
+class Obj {
     int n = 1;
 }
